@@ -1,4 +1,4 @@
-import { api } from './client'
+import { api, API_BASE_URL } from './client'
 
 export interface AdminMe {
   username: string
@@ -284,11 +284,11 @@ export async function fetchRawFiles(query: RawQuery): Promise<RawResponse> {
 }
 
 export function rawPreviewUrl(id: string): string {
-  return `/api/admin/raw/${id}/preview`
+  return `${API_BASE_URL}/admin/raw/${id}/preview`
 }
 
 export function rawDownloadUrl(id: string): string {
-  return `/api/admin/raw/${id}/download`
+  return `${API_BASE_URL}/admin/raw/${id}/download`
 }
 
 export async function deleteRawFile(id: string): Promise<void> {

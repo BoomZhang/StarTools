@@ -1,5 +1,5 @@
 import type { ServerTask } from '@/types'
-import { api } from './client'
+import { api, API_BASE_URL } from './client'
 
 export interface CreateTaskOptions {
   onUploadProgress?: (percent: number) => void
@@ -40,5 +40,5 @@ export async function deleteTaskResults(taskId: string): Promise<void> {
 }
 
 export function archiveUrl(taskId: string): string {
-  return `/api/tasks/${taskId}/archive`
+  return `${API_BASE_URL}/tasks/${taskId}/archive`
 }

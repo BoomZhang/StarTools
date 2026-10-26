@@ -5,6 +5,7 @@ import { useRouter } from 'vue-router'
 import AppIcon from '@/components/AppIcon.vue'
 import ToolBadge from '@/components/ToolBadge.vue'
 import type { ApiErrorInfo } from '@/api/client'
+import { archiveUrl } from '@/api/tasks'
 import type { TaskState } from '@/composables/useServerTask'
 import { useSite } from '@/composables/useSite'
 import type { ServerTask, Tool } from '@/types'
@@ -249,7 +250,7 @@ function askRetry() {
           <a
             v-if="task.results.length > 1"
             class="button button-ink button-sm"
-            :href="`/api/tasks/${task.task_id}/archive`"
+            :href="archiveUrl(task.task_id)"
           >
             <AppIcon name="download" :size="13" />
             打包下载 ZIP
