@@ -1,0 +1,53 @@
+:root {
+  color-scheme: light;
+
+  --paper: #f4f1e8;
+  --paper-deep: #ece7da;
+  --surface: #fcfbf7;
+  --surface-2: #f7f4ec;
+  --ink: #191c17;
+  --ink-2: #2c3028;
+  --muted: #62665b;
+  --faint: #6b6e62;
+  --line: #d9d3c4;
+  --line-strong: #c1baa8;
+
+  --forest: #14241d;
+  --forest-2: #1b3127;
+  --forest-3: #29453a;
+
+  --accent: #de4e27;
+  --accent-deep: #a93215;
+  --accent-soft: #f6ddd2;
+
+  --server: #25664f;
+  --server-soft: #e1ede6;
+  --local: #7c591d;
+  --local-soft: #f2e8d2;
+
+  --danger: #a53b2a;
+  --danger-soft: #f5dfda;
+  --warn: #8f621b;
+  --warn-soft: #f5e9cf;
+  --success: #1e6a50;
+  --success-soft: #e1eee7;
+
+  --font-ui: 'DM Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --font-display: 'Noto Serif SC', 'Songti SC', 'Source Han Serif SC', 'STSong', 'SimSun', serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', 'Cascadia Code', 'Consolas', monospace;
+
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 30px;
+
+  --shadow-sm: 0 1px 2px rgba(25, 28, 23, 0.04), 0 8px 24px rgba(25, 28, 23, 0.05);
+  --shadow-md: 0 20px 48px rgba(25, 28, 23, 0.09);
+  --shadow-lg: 0 36px 90px rgba(12, 20, 16, 0.22);
+
+  --page-max: 1320px;
+  --gutter: 28px;
+  --header-h: 76px;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
